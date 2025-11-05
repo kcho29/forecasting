@@ -4,8 +4,7 @@ Summary
 - Small client that talks to Kalshi via a local client package and example notebook (base/get_data.ipynb).
 
 Prerequisites
-- Python 3.8+ (Windows)
-- Git (optional)
+- Python 3.8+
 
 API KEY
 - Get from Kalshi - https://docs.kalshi.com/getting_started/api_keys
