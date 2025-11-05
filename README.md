@@ -23,7 +23,7 @@ Notes on formatting
 
 kalshi.key (private key) requirements
 - The client expects a PEM-encoded private key readable as bytes and loadable via cryptography.hazmat.primitives.serialization.load_pem_private_key(...).
-- You get one from Kalshi and should be formatted like: 
+- You get one from Kalshi and should be formatted like: <br>
 -----BEGIN RSA PRIVATE KEY-----<br>
 blah balh balh akdjflkasjdklfas <br>
 asdfdsjfalksdjfklsadjlkfjaskldf <br>
