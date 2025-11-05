@@ -13,10 +13,10 @@ Environment (.env)
 - Place a .env file in the same folder that your code loads from (this project uses `base/.env` in the repo example).
 - Required variables (example values shown — do NOT commit real secrets):
 
-  KEYID='your-api-key-id'\n
-  KEYFILE='kalshi.key'       # path to PEM private key file used to sign \n
-  DEMOID='your-demo-id'      # optional demo account id\n
-  DEMOFILE='demo.key'        # optional demo private key path\n
+  KEYID='your-api-key-id'<br>
+  KEYFILE='kalshi.key'       # path to PEM private key file used to sign <br>
+  DEMOID='your-demo-id'      # optional demo account id<br>
+  DEMOFILE='demo.key'        # optional demo private key path<br>
 
 Notes on formatting
 - Values can be quoted or unquoted; python-dotenv will load them. Use relative paths (relative to project root) or absolute paths for KEYFILE/DEMOFILE.
@@ -24,14 +24,14 @@ Notes on formatting
 kalshi.key (private key) requirements
 - The client expects a PEM-encoded private key readable as bytes and loadable via cryptography.hazmat.primitives.serialization.load_pem_private_key(...).
 - You get one from Kalshi and should be formatted like: 
------BEGIN RSA PRIVATE KEY-----\n
-blah balh balh akdjflkasjdklfas \n
-asdfdsjfalksdjfklsadjlkfjaskldf \n
-asdfasdklfjlkasdfjkladsjfsdsssd\n
-asdadskjflkasjdfkladsjklfjadskl\n
-fasakdjfhkjsdfjkajlkfsdfsfdsfds\n
-sfdasdfjalksdjfklsjkdfljdkjfkdj\n
------END RSA PRIVATE KEY-----\n
+-----BEGIN RSA PRIVATE KEY-----<br>
+blah balh balh akdjflkasjdklfas <br>
+asdfdsjfalksdjfklsadjlkfjaskldf <br>
+asdfasdklfjlkasdfjkladsjfsdsssd<br>
+asdadskjflkasjdfkladsjklfjadskl<br>
+fasakdjfhkjsdfjkajlkfsdfsfdsfds<br>
+sfdasdfjalksdjfklsjkdfljdkjfkdj<br>
+-----END RSA PRIVATE KEY-----<br>
 
 Security
 - Treat KEYID and key files as secrets. Do not push them to public repositories. Use appropriate OS file permissions and .gitignore entries.
