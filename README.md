@@ -289,7 +289,7 @@ trades = api.get_trades(
 ```
 
 ### Rate Limiting
-The client includes automatic rate limiting (100ms between requests). All methods handle authentication and request signing automatically.
+The client includes automatic rate limiting (75ms between requests). All methods handle authentication and request signing automatically.
 
 ### Error Handling
 All API methods raise `HTTPError` on non-2xx responses. Wrap calls in try-except blocks:

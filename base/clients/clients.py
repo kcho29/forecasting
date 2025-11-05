@@ -107,7 +107,7 @@ class KalshiHttpClient(KalshiBaseClient):
 
     def rate_limit(self) -> None:
         """Built-in rate limiter to prevent exceeding API rate limits."""
-        THRESHOLD_IN_MILLISECONDS = 100
+        THRESHOLD_IN_MILLISECONDS = 75
         now = datetime.now()
         threshold_in_microseconds = 1000 * THRESHOLD_IN_MILLISECONDS
         threshold_in_seconds = THRESHOLD_IN_MILLISECONDS / 1000
