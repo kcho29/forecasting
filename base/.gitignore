@@ -1,0 +1,11 @@
+# Ignore environment variable files
+.env
+.env.*
+
+# Ignore key files
+*.key
+*.pem
+*.crt
+
+#ignore Python cache files
+__pycache__/

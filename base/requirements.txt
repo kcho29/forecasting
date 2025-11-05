@@ -1,0 +1,10 @@
+requests
+cryptography
+websockets
+python-dotenv
+nest_asyncio
+pandas
+pytz
+matplotlib
+datetime
+plotly
